@@ -1,7 +1,6 @@
 #pragma once
 #include <cstdint>
 #include <cstdio>
-#include <iostream>
 
 class MemoryMapper // interface for generating a memory map for an entire system, base class simply creates 64k of ram
 {
