@@ -8,6 +8,13 @@ private:
 	uint8_t* addressSpace; // can't be directly modified
 	uint64_t addrSpaceSize;
 
+    struct memZone{
+        memZoneName name;
+        uint16_t start;
+        uint16_t length;
+        uint16_t* mirrors; // array of mirror locations
+        uint8_t numMirrors; // how many locations it is mirrored at
+    };
 public:
 	MemoryMapper()
 	{
